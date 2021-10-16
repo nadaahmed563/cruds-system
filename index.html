@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    l
+</head>
+
+<body>
+
+    <div class="w-75 mx-auto my-5">
+
+        <div class="mb-3">
+
+            <label for="productName">Product Name :</label>
+            <input class="form-control my-2" type="text" id="productName">
+            <p id="nameAlert" class="alert alert-danger d-none"> product name must be start with capital and from 2 to 8 characters </p>
+
+        </div>
+
+        <div class="mb-3">
+
+            <label for="productPrice">Product Price :</label>
+            <input class="form-control my-2" type="number" id="productPrice">
+            <p id="priceAlert" class="alert alert-danger d-none"> product Price must be numbers only</p>
+
+        </div>
+
+        <div class="mb-3">
+
+            <label for="productCategory">Product Category :</label>
+            <input class="form-control my-2" type="text" id="productCategory">
+            <p id="categoryAlert" class="alert alert-danger d-none"> Product name must be from 1 to 8 characters</p>
+
+        </div>
+
+        <div class="mb-3">
+
+            <label for="productDesc">Product Desc :</label>
+            <textarea class="form-control my-2" type="text" id="productDesc"></textarea>
+            <p id="descAlert" class="alert alert-danger d-none">Product name must be start with 2 to 100 characters</p>
+
+        </div>
+
+        <button  onclick="addProduct()" class="btn btn-outline-info mt-3" id="addBtn">Add Product</button>
+
+
+
+    </div>
+
+    <div class="w-75 mx-auto">
+
+        <label for=""></label>
+        <input onkeyup="searchProduct(this.value)" class="form-control" type="text" name="" id="" placeholder="Search by ProductName">
+
+    </div>
+
+    <div class="w-75 mx-auto my-5">
+
+        <table class="table table-responsive">
+            <thead>
+                <th>Index</th>
+                <th>ProductName</th>
+                <th>ProductPrice</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </thead>
+
+            <tbody id="tableBody">
+
+              
+            </tbody>
+        </table>
+
+    </div>
+
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
